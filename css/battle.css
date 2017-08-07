@@ -1,0 +1,326 @@
+body{
+	background: url("../images/index_bodybj.jpg") no-repeat center top;
+	background-size: cover;
+    min-height: 1080px;
+    position: relative;
+	}
+.head{
+    width: 100%;
+    height: 80px;
+    background: #181818;
+}
+.head .wrap,.container{
+	width: 1105px;
+	margin: auto;
+}
+.head .nav{
+    width: 171px;
+    height: 47px;
+    margin: 16px 0 0 0;
+}
+.head .nav1{
+    width: 600px;
+    height: 80px;
+    margin-left: 80px;
+}
+.head .nav1 li{
+    float: left;
+    width: 120px;
+    text-align: center;
+    margin-top: 21px;
+}
+.head .nav1 li a,.head .nav2 li a{
+    color: #fff;
+    display: block;
+}
+.head .nav1 .nav1_a{position: relative}
+.head .nav1 .nav1_a i{
+    min-width: 15px;
+    height: 15px;
+    font-style: normal;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 15px;
+    text-align: center;
+    color: #482822;
+    position: absolute;
+    right: 26px;
+    top: 2px;
+}
+.head .nav2{width: 250px;margin-left: 4px;}
+.head .nav2 li{
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-top: 21px;
+}
+.head .nav2 .head_photo{text-align: left;}
+.head .nav2 .head_photo i img{width: 40px;height: 40px;border-radius: 50%;float: left}
+.head .nav2 .head_photo a{float: left;margin-left: 10px}
+.head .nav2 li .nav2_a{
+    display: block;
+    height: 38px;
+    width: 150px;
+    line-height: 38px;
+    position: relative;
+}
+.head .nav2_a i{
+    width: 20px;
+    height: 15px;
+    margin: 6px 0 0 16px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: url(../images/icon.png) no-repeat -75px -61px;
+}
+.head ul li span{
+    color: #ccc;
+    display: inline-block;
+    margin-top: 3px;
+}
+.head .nav1 li a:hover,.head .nav1 .nav1_hover a{
+    border-bottom: 4px solid white;
+    padding-bottom: 14px;
+}
+/*头部完成*/
+.container{color: #fff;}
+.container .dunpai{
+	float: left;
+	width: 100%;
+	min-height: 489px;
+    margin-top: 144px;
+    background: url(../images/index_dunpai.png) no-repeat top center;
+    position: relative;
+    z-index: 1000;
+}
+.dunpai .wenzi {
+	margin-top: 290px;
+	line-height: 40px;
+	text-align: center;	
+}
+.wenzi .fon_28{
+	font-size: 28px;
+}
+.wenzi .fon_22{
+	font-size: 22px;
+}
+.select{margin-top: 10px;}
+.select li{
+	height: 42px;
+    line-height: 42px;
+}
+.select .sec{font-size: 16px;}
+.select .game{
+	width: 155px;
+    background: url(../images/yxgz.png) no-repeat;
+    text-align: center;
+}
+.select .game a{display: block;color: #fff;}
+/*弹出游戏规则开始*/
+#game-gz{
+	position: fixed;
+    top: 180px;
+    left: 349px;
+    background: #fff;
+    width: 650px;
+    padding: 22px 20px 45px 45px;
+    z-index: 1009;
+    border-radius: 20px;
+    display: none;
+}
+#game-gz .game-title{position: relative;}
+.game-title .gz{
+	position: absolute;
+    font-weight: bold;
+    color: #5a5a5a;
+    left: 0px;
+    top: 15px;
+}
+.game-title .close{
+	width: 15px;
+    height: 15px;
+    float: right;
+    background: url(../images/colse.png) no-repeat;
+    cursor: pointer;
+}
+#game-gz .gz-det{
+	width: 100%;
+    float: left;
+    line-height: 24px;
+    color: #444;
+    margin-top: 30px;
+}
+/*弹出游戏规则结束*/
+/*选择对战类型开始*/
+.tanchu-div{
+	position: fixed;
+	top: 200px;
+	left: 40%;
+	z-index: 1009;
+	background-color: #fff;
+	border-radius: 20px;
+	display: none;
+}
+.tanchu-div .dzlx{
+	width: 290px;
+    padding: 20px 20px 25px 20px;
+}
+.dzlx .st-1{
+	color: #2c2b2b;
+    font-size: 16px;
+    text-align: center;
+}
+.dzlx .st-2{
+	text-align: center;
+    margin-top: 20px;
+}
+.dzlx .st-2 a{
+	width: 141px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+}
+.dzlx .st-2 .hy-yq{
+	background: url(../images/dzlx.png) no-repeat left top;
+    float: left;
+}
+.dzlx .st-2 .xt-pp{
+	background: url(../images/dzlx.png) no-repeat right top;
+    float: right;
+}
+
+
+/*选择对战类型结束*/
+.container .rank{
+	margin-top: 20px;
+	width: 100%;
+}
+.container .rank table{width: 100%;}
+.rank table th{
+	width: 20%;
+    text-align: center;
+    height: 80px;
+    vertical-align: top;
+    font-weight: normal;
+}
+table th ul{
+	display: block;
+    height: 80px;
+    margin-left: 1px;
+}
+li{box-sizing: border-box;}
+table th .hdc{
+	background: rgba(82,82,82,0.5);
+    margin-left: 0px;
+}
+table th .rmc{
+	background: rgba(203,123,58,0.5);
+}
+table th .cjc{    background: rgba(232,127,91,0.5);}
+table th .zjc{    background: rgba(125,131,255,0.5);}
+table th .gjc{    background: rgba(162,122,208,0.5);}
+table th .jibie{
+	width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    height: 34px;
+    line-height: 34px;
+    float: left;
+    padding-bottom: 3px;
+}
+table th .rmb{
+	width: 100%;
+    float: left;
+    vertical-align: top;
+    font-size: 28px;
+    color: #ffdc61;
+}
+table th .rmb1{font-size: 18px;}
+th .rmb i,th .rmb span{
+	display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: top;
+    margin-left: 10px; 
+}
+th .rmb span{margin-left: 0;}
+th .rmb i{
+	width: 26px;
+    background: url(../images/icon.png) no-repeat 0px -61px;
+}
+table tr td{
+	width: 20%;
+    text-align: center;
+    height: 52px;
+    line-height: 52px;
+}
+table tr td a{
+	display: block;
+    height: 52px;
+    margin-left: 1px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 52px;
+}
+table tr td .hdc{
+	background: #6b6b6b;
+    margin-left: 0px;
+}
+table tr td .rmc{background: #f9912c;}
+table tr td .cjc{background: #ff774d;}
+table tr td .zjc{background: #9287ff;}
+table tr td .gjc{background: #b875ec;}
+/*匹配完成*/
+div.rt-kf{
+    position: fixed;
+    z-index: 1009;
+    right: 0px;
+    top: 30%;
+    display: none;
+} 
+.rt-kf .hy-zb{
+	width: 154px;                      
+  	background: rgba(154,154,154,0.37);
+  	padding-bottom: 20px;
+}
+.rt-kf .hy-zb a{
+	display: block;
+	padding-top: 26px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+.hy-zb a i{
+	width: 60px;
+    height: 51px;    background: url(../images/icon.png) no-repeat 0px 0px;    display: inline-block; 
+}
+.rt-kf .zb-jr{
+	background: #f0a227;
+    text-align: center;    line-height: 22px;    padding: 14px 0px;    font-size: 14px;
+} 
+.rt-kf .zb-jr a{display: block;text-align: center;}
+.rt-kf .zb-jr a i{
+	width: 22px;
+    height: 22px;
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat 0px -107px;
+}     
+.rt-kf .zb-jr a span{
+	display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    font-size: 14px;
+} 
+/*右边客服完成*/
+#foot{
+	z-index: 1008;
+} 
+div.hid-box{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+
+}              

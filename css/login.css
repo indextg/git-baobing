@@ -1,0 +1,63 @@
+body{
+    background: url("../images/login_bj.jpg") no-repeat top center;
+    min-height: 900px;
+}
+#container{
+    width: 428px;
+    height: 422px;
+    background: url("../images/login_formbj.png");
+    position: absolute;
+    right: 100px;
+    top: 120px;
+}
+ul.login{
+    width: 300px;
+    margin: 61px auto;
+}
+ul .login_li1{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+ul .login_li2 input,ul .login_li3 input{
+    width: 290px;
+    height: 37px;
+    border: none;
+    color: #ccc;
+    border-radius: 30px;
+    text-indent: 50px;
+    margin-top: 18px;
+}
+ul .login_li2 input{
+    background: rgba(11,11,11,0.3) url("../images/login_pass.png") no-repeat 20px 10px;
+}
+ul .login_li3 input{
+    background: rgba(11,11,11,0.3) url("../images/login_pass.png") no-repeat 20px -47px;
+}
+ul .login_li4{
+    color: red;
+    text-align: left;
+    margin: 20px 0;
+}
+ul .login_li5 input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff7c1c;
+    border-radius: 10px;
+}
+ul .login_li6{margin-top: 15px;text-align: center}
+ul .login_li6 li{
+    display: inline-block;
+}
+ul .login_li6 li a{
+    display: block;
+    padding: 0 10px;
+    height: 13px;
+    color: #fff;
+    line-height: 13px;
+    border-right: 1px solid #ccc;
+}

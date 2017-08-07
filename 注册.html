@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/zhuce.css" type="text/css">
+</head>
+<body>
+    <div id="head">
+        <a href="首页.html"><img src="images/logo_01.png" alt=""></a>
+    </div>
+    <!--头部完成-->
+    <div id="container">
+        <form action="">
+            <ul class="c_ul1">欢迎注册</ul>
+            <ul class="c_ul2 clearFixed">
+                <li class="c_li1">用户名</li>
+                <li class="c_li2">
+                    <label for="text"></label>
+                    <input id="text" type="text">
+                </li>
+            </ul>
+            <ul class="c_ul2 clearFixed">
+                <li class="c_li1">密码</li>
+                <li class="c_li2">
+                    <label for="password"></label>
+                    <input id="password" type="password">
+                </li>
+            </ul>
+            <ul class="c_ul2 clearFixed">
+                <li class="c_li1">确认密码</li>
+                <li class="c_li2">
+                    <label for="okpswd"></label>
+                    <input id="okpswd" type="password">
+                </li>
+            </ul>
+            <ul class="c_ul2 clearFixed">
+                <li class="c_li1">手机号</li>
+                <li class="c_li2">
+                    <label for="num"></label>
+                    <input id="num" type="text">
+                </li>
+            </ul>
+            <ul class="c_ul2 clearFixed" style="position: relative">
+                <li class="c_li2">
+                    <label for="yanzheng"></label>
+                    <input style="padding-left: 25px" id="yanzheng" type="text">
+                </li>
+                <li class="a2"><button id="btn" type="button" onclick="checkString()"></button></li>
+            </ul>
+            <ul class="c_ul3">
+                <li>
+                    <label for="checkbox"></label>
+                    <input id="checkbox" type="checkbox">
+                </li>
+                <li>
+                    <small>已阅读并同意<a href="#">《暴雪竞技平台注册协议》</a></small>
+                </li>
+            </ul>
+            <input id="submit" type="submit" value="注册">
+            <p id="p_foot">我已有账号，<a href="login.html">直接登录</a></p>
+        </form>
+    </div>
+	<!--用户注册协议开始-->
+	<div class="hid-box">
+	<div class="tanchu-div" id="tanchu-div">
+		<div class="zhuce-xy">
+			<div class="zhuce-title">
+				<h3>用户注册协议</h3>
+				<span id="close"></span>
+			</div>
+			<div class="xiexi-nr">
+				<p>					
+            本协议是您与暴冰竞技平台（简称"本站"，网址：www.BaobeeGame.com）所有者（以下简称为"暴冰"）之间就暴冰
+            网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议，您点击"同意并继续"按钮后，本协议即
+            构成对双方有约束力的法律文件。
+            第1条 本站服务条款的确认和接纳
+            1.1、本站的各项电子服务的所有权和运作权归暴冰所有。用户同意所有注册协议条款并完成注册程序，
+            才能成为本站的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强
+            制性规定或双方另有特别约定的，依其规定。
+            1.2、用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行
+            为能力，能够独立承担法律责任。
+            1.3、如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。
+            1.4、暴冰保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户
+       		
+				</p>
+			</div>
+			<div class="xieyi-btn">
+				<a href="javascript:;" id="agree">同意并继续</a>
+			</div>
+		</div>
+	</div>
+			
+	</div>
+    <!--用户注册协议完成-->
+    <!--内容完成-->
+    <div class="foot">
+        <div class="f_top clearFixed">
+            <a class="fl" href="首页.html"><img src="images/logo_02.png" alt=""></a>
+            <div class="fl top_nav1">
+                <a href="#">关于我们</a>
+                <a href="#">法律声明</a>
+                <a href="#">联系我们</a>
+                <a href="#">服务条款</a>
+            </div>
+            <div class="fl top_nav2">
+                <p class="f_p1"><a href="#">微信公众号：暴冰科技</a></p>
+                <p class="f_p2"><a href="#">QQ客服：2435566</a></p>
+            </div>
+            <div class="fr top_nav3">
+                <p class="f_p3">0340-56678650</p>
+                <p class="f_p4">周一至周五 9:00～18:00</p>
+            </div>
+        </div>
+        <div class="f_bottom">
+            山东暴冰科技有限公司<p class="f_p5">版权所有</p><p class="f_p6">京ICP备12052030号</p>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	var btn=document.getElementById('btn');
+		function checkString() {
+            var count = 0;
+            var str = "";
+            do {
+                var code = parseInt(Math.random() * 123);
+                if (code >= 48 && code <= 57 || code >= 65 && code <= 90 || code >= 97 && code <= 122) {
+                    str += String.fromCharCode(code);
+                    count++;
+                }
+            } while (count !== 6);
+//          return str;
+            btn.innerHTML=str;
+            
+        }
+		checkString();
+		
+		
+	window.onload=function(){
+//		var tanchu= document.getElementById('tanchu-div'),
+//		 	close=document.getElementById('close'),
+//		 	agree=document.getElementById('agree');
+//		close.onclick=function(){
+//			tanchu.setAttribute('style','display: none;');
+//		}
+//		agree.onclick=function(){
+//			tanchu.setAttribute('style','display: none;')
+//		}
+		$('#close').on('click',function(){
+			$('div.hid-box').hide();
+			$('#tanchu-div').hide();
+		});
+		$('#agree').on('click',function(){
+			$('div.hid-box').hide();
+			$('#tanchu-div').hide();
+		});
+		
+	}
+</script>

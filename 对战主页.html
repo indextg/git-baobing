@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对战主页</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/battle.css" type="text/css">
+</head>
+<body>
+    <div class="head">
+    	<div class="wrap clearFixed">
+    		 <ul class="fl nav">
+            	<li><a href="首页.html"><img src="images/logo_01.png" alt=""></a></li>
+        	</ul>
+       	 	 <ul class="fl clearFixed nav1">
+	            <li class="nav1_hover">
+	                <a href="#">游戏大厅<br><span>Game hall</span></a>
+	            </li>
+	            <li>
+	                <a href="#">排行榜<br><span>Ranking List</span></a>
+	            </li>
+	            <li>
+	                <a href="#">道具商城<br><span>Store</span></a>
+	            </li>
+	            <li>
+	                <a href="#">成为主播<br><span>Be anchor</span></a>
+	            </li>
+	            <li class="nav1_a">
+                	<a href="#">
+                    	<i>8</i>
+                    	我的<br><span>Mine</span>
+                	</a>
+            	</li>
+        	</ul>
+       		 <ul class="fl clearFixed nav2">
+        	    <li class="head_photo">
+                	<i><img src="images/ad_01.png" alt=""></i>
+                	<a href="login.html">Magee<br><span>退出</span></a>
+            	</li>
+            	<li>
+                	<a class="nav2_a" href="#">
+                   	 	<i></i>
+                    	意见反馈
+                	</a>
+            	</li>
+        	</ul>
+    	</div>
+  </div>
+  <!--头部完成-->
+  <div class="container clearFixed">
+	  <div class="dunpai">
+	  	<ul class="wenzi">
+	  		<li class="fon_28">赢100金币奖励</li>
+	  		<li class="fon_22">比赛时间：206-10-09 14:00</li>
+	  	</ul>
+	  	<ul class="select clearFixed">
+	  		<li class="sec fl">选择竞技场</li>
+	  		<li class="game fr" id="guize"><a href="javascript:;">游戏规则</a></li>
+	  	</ul>
+	  	<ul class="rank">
+	  		<table border="0" cellspacing="0" cellpadding="0">
+	  			<tr>
+	  				<th>
+	  					<ul class="hdc">
+	  						<li class="jibie">活动场</li>
+	  						<li class="rmb rmb1">
+	  							<i></i>
+	  							<span>免费</span>
+	  						</li>
+	  					</ul>
+	  				</th>
+	  				<th>
+	  					<ul class="rmc">
+	  						<li class="jibie">入门场</li>
+	  						<li class="rmb clearFixed">
+	  							<i></i>
+	  							<span>50</span>
+	  						</li>
+	  					</ul>
+	  				</th>
+	  				<th>
+	  					<ul class="cjc">
+	  						<li class="jibie">初级场</li>
+	  						<li class="rmb">
+	  							<i></i>
+	  							<span>100</span>
+	  						</li>
+	  					</ul>
+	  				</th>
+	  				<th>
+	  					<ul class="zjc">
+	  						<li class="jibie">中级场</li>
+	  						<li class="rmb">
+	  							<i></i>
+	  							<span>500</span>
+	  						</li>
+	  					</ul>
+	  				</th>
+	  				<th>
+	  					<ul class="gjc">
+	  						<li class="jibie">高级场</li>
+	  						<li class="rmb">
+	  							<i></i>
+	  							<span>1000</span>
+	  						</li>
+	  					</ul>
+	  				</th>
+	  			</tr>
+	  			<tr class="dj-pei">
+	  				<td><a class="hdc" href="javascript:;">点击匹配</a></td>
+	  				<td><a class="rmc" href="javascript:;">点击匹配</a></td>
+	  				<td><a class="cjc" href="javascript:;">点击匹配</a></td>
+	  				<td><a class="zjc" href="javascript:;">点击匹配</a></td>
+	  				<td><a class="gjc" href="javascript:;">点击匹配</a></td>
+	  			</tr>
+	  		</table>
+	  	</ul>
+	  </div>
+	  <!--弹出游戏规则-->
+	  <div id="game-gz">
+	  		<div class="game-title">
+	  			<p class="gz">游戏规则</p>
+	  			<p class="close"></p>
+	  		</div>
+	  		<div class="gz-det">
+	  			<p>
+	  				1.比赛地图为召唤师峡谷，限中路
+	  				<br />
+	  				2.比赛选手可选择任意召唤师进行比赛
+	  				<br />
+	  				3.匹配成功后开始十分钟倒计时，显示对战双方游戏大区，角色ID，双方联系方式，由双方邀请进入比赛
+房间，选手进入房间后截图，未在规定时间内参与比赛的选手，由已经到达游戏房间内的选手，上传有效
+截图（时间，己方角色ID，比赛房间，），1小时内由官方客服判断比赛输赢，未在规定时间内到达比赛
+房间的扣除其报名时所缴纳费用，判定为认输，胜方将获得双方报名费用的60％金币奖励
+	  			</p>
+	  			<hr />
+	  			<p>
+	  				获胜与失败奖惩：
+	  				<br />
+	  				1.获胜方获得双方比赛报名费用的85％金币奖励
+	  				<br />
+	  				2.每胜利一场增加战意值1点的奖励
+					<br />
+					3.失败方失败后扣除其报名时所缴纳金币
+					<br />
+					4.失败方扣除1点战意值
+					<br />
+					违规行为：
+					<br />
+					1.比赛过程中进入游戏后人为退出游 <a href="javascript:;">展开全部</a>
+	  			</p>
+	  		</div>
+	  </div>
+	  <!--弹出游戏规则结束-->
+	  
+	  <!--选择对战类型-->
+	  <div class="hid-box">
+		  <div class="tanchu-div">
+		  	<div class="dzlx">
+		  		<ul>
+		  			<li class="st-1">选择对战类型</li>
+		  			<li class="st-2 clearFixed">
+		  				<a href="javascript:;" class="hy-yq">好友邀请</a>
+		  				<a href="javascript:;" class="xt-pp">系统匹配</a>
+		  			</li>
+		  		</ul>
+		  	</div>	
+		  </div>  
+	  </div>
+	  <!--选择对战类型结束-->
+  </div>
+  <!--匹配完成-->
+  <div class="rt-kf">
+  	<div class="hy-zb">
+  		<a href="javascript:;">
+  			<i></i>
+  			<p>虎牙直播</p>
+  		</a>
+  	</div>
+  	<div class="zb-jr">
+  		<a href="javascript:;">
+  			<i></i>
+  			<span>进入</span>
+  		</a>
+  	</div>
+  </div>
+  <!--右边客服完成-->
+  <div id="foot">
+        <div class="f_top clearFixed">
+            <a class="fl" href="首页.html"><img src="images/logo_02.png" alt=""></a>
+            <div class="fl top_nav1">
+                <a href="#">关于我们</a>
+                <a href="#">法律声明</a>
+                <a href="#">联系我们</a>
+                <a href="#">服务条款</a>
+            </div>
+            <div class="fl top_nav2">
+                <p class="f_p1"><a href="#">微信公众号：暴冰科技</a></p>
+                <p class="f_p2"><a href="#">QQ客服：2435566</a></p>
+            </div>
+            <div class="fr top_nav3">
+                <p class="f_p3">0340-56678650</p>
+                <p class="f_p4">周一至周五 9:00～18:00</p>
+            </div>
+        </div>
+        <div class="f_bottom">
+            山东暴冰科技有限公司<p class="f_p5">版权所有</p><p class="f_p6">京ICP备12052030号</p>
+        </div>
+   </div>
+</body>
+</html>
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	//	对战主页
+	$(document).ready(function(){
+		var guize=$('#guize a');
+	$(guize).on('click',function(){
+		$('#game-gz').css('display','block');
+		});
+	});
+	$('#game-gz .close').on('click',function(){
+		$('#game-gz').css('display','none');
+	});
+//	弹出游戏规则结束
+	$('.rank .dj-pei a').on('click',function(){
+		$('.tanchu-div').show();
+		$('div.hid-box').show().css({
+			'background': 'rgba(0,0,0,0.7)'
+		});
+	});
+	$('div.hid-box').on('click',function(){
+		$('div.tanchu-div').hide();
+		$(this).hide();
+	});
+//	点击匹配完成
+	$('div.rt-kf').fadeIn(6000);
+//	虎牙直播完成
+	
+</script>

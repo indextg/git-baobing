@@ -1,0 +1,115 @@
+body,div,p,ul,ol,li,a,span,table,h1,h2,h3,h4,input,tr,td,th{margin: 0;padding: 0}
+body,html{font-size:14px; color:#f9d6a9;font-family: 微软雅黑, sans-serif}
+img{border: none;outline: none}
+a{text-decoration: none}
+li{list-style: none}
+input{outline: none;border: none}
+i,b,del,strong,h1,h2,h3,h4{font-style: normal}
+
+.fl{float: left}
+.fr{float: right}
+.clearFixed:after{
+    height:0;
+    content:".";
+    clear: both;
+    visibility: hidden;
+    display: block
+}
+.clearFixed{*zoom: 1;}
+
+
+/*head*/
+#head{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(11,11,11,0.3);
+}
+#head a{
+    display: block;
+    width: 171px;
+    height: 47px;
+}
+#head a img{
+    margin: 15px 0 0 90px;
+}
+#foot{
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    min-height: 215px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+#foot .f_top{
+    width: 1175px;
+    margin: 40px auto 0;
+}
+#foot .f_top a{
+    color:#f9d6a9;
+}
+#foot div.top_nav1{
+    width: 220px;
+    font-size: 18px;
+    margin-left: 85px;
+    border-right: 1px solid #eee;
+}
+#foot div.top_nav1 a{
+    display: inline-block;
+    margin: 5px 8px;
+}
+#foot div.top_nav2{
+    width: 220px;
+    margin-left: 20px;
+}
+#foot div.top_nav2 p{
+    height: 30px;
+    line-height: 30px;
+}
+#foot div.top_nav2 .f_p1{
+    background: url("../images/footer_01.png") no-repeat 0 5px;
+}
+#foot div.top_nav2 .f_p2{
+    background: url("../images/footer_01.png") no-repeat 0 -27px;
+    margin-top: 5px;
+}
+#foot div.top_nav2 .f_p1 a,div.top_nav2 .f_p2 a{
+    display: block;
+    text-indent: 40px;
+}
+#foot div.top_nav3{
+    width: 220px;
+    height: 68px;
+    background: url("../images/tel.png") no-repeat;
+    margin-top: 10px;
+}
+#foot div.top_nav3 .f_p3{
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: right;
+}
+#foot div.top_nav3 .f_p4{
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+#foot .f_bottom{
+    width: 1175px;
+    height: 78px;
+    font-size: 10px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+#foot p.f_p5{
+    display: inline-block;
+    margin-left: 20px;
+}
+#foot p.f_p6{
+    display: inline-block;
+    margin-left: 30px;
+}
+#foot div.top_nav1 a:hover,#foot div.top_nav2 p a:hover{
+    text-decoration: underline;
+    color: #fff !important;
+}
